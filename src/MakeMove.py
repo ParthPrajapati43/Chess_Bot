@@ -2,7 +2,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import chess
 
 def makeMove(self, posNum, posAlpha): 
-    # print(str(8 - posNum) + chr(97 + posAlpha) + " clicked!")
+    print(str(8 - posNum) + chr(97 + posAlpha) + " clicked!")
     if (not self.pieceSelected and self.selectedPiece == ""):
         self.pieceSelected = True
         self.selectedPiece = str(8 - posNum) + chr(97 + posAlpha)
