@@ -1,0 +1,2422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Chess</class>
+ <widget class="QMainWindow" name="Chess">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1076</width>
+    <height>687</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Chess</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(31, 31, 31);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="sidePanel">
+    <property name="geometry">
+     <rect>
+      <x>698</x>
+      <y>6</y>
+      <width>373</width>
+      <height>677</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(70, 70, 70);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>2</y>
+       <width>364</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="botOutPieces">
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="bot1">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="bot2">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="bot3">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="bot4">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="bot5">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="bot6">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="bot7">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QPushButton" name="bot8">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="bot9">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="bot10">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="bot11">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="bot12">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QPushButton" name="bot13">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QPushButton" name="bot14">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QPushButton" name="bot15">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <widget class="QPushButton" name="bot16">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="humanIcon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>484</y>
+       <width>71</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 40px;
+color: white;
+background: rgb(51, 51, 51);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/userW.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="botIcon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>71</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 40px;
+color: white;
+background: rgb(204, 204, 204)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/botB.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="botScore">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>124</y>
+       <width>103</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(51, 51, 51);
+font-size: 40px;
+background: rgb(204, 204, 204);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="humanScore">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>490</y>
+       <width>103</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(204, 204, 204);
+font-size: 40px;
+background: rgb(51, 51, 51);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="humanTimer">
+     <property name="geometry">
+      <rect>
+       <x>224</x>
+       <y>490</y>
+       <width>141</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(204, 204, 204);
+font-size: 40px;
+background: rgb(51, 51, 51);</string>
+     </property>
+     <property name="text">
+      <string>00:00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="botTimer">
+     <property name="geometry">
+      <rect>
+       <x>224</x>
+       <y>124</y>
+       <width>141</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(51, 51, 51);
+font-size: 40px;
+background: rgb(204, 204, 204);</string>
+     </property>
+     <property name="text">
+      <string>00:00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="botLabel">
+     <property name="geometry">
+      <rect>
+       <x>26</x>
+       <y>98</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font-size: 16px;</string>
+     </property>
+     <property name="text">
+      <string>BOT</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="humanLabel">
+     <property name="geometry">
+      <rect>
+       <x>26</x>
+       <y>560</y>
+       <width>59</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font-size: 16px;</string>
+     </property>
+     <property name="text">
+      <string>HUMAN</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="botScoreLabel">
+     <property name="geometry">
+      <rect>
+       <x>116</x>
+       <y>98</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font-size: 16px;</string>
+     </property>
+     <property name="text">
+      <string>SCORE</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="humanScoreLabel">
+     <property name="geometry">
+      <rect>
+       <x>116</x>
+       <y>560</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font-size: 16px;</string>
+     </property>
+     <property name="text">
+      <string>SCORE</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="botTimerLabel">
+     <property name="geometry">
+      <rect>
+       <x>232</x>
+       <y>98</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font-size: 16px;</string>
+     </property>
+     <property name="text">
+      <string>TIMER</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="humanTimerLabel">
+     <property name="geometry">
+      <rect>
+       <x>232</x>
+       <y>560</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font-size: 16px;</string>
+     </property>
+     <property name="text">
+      <string>TIMER</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>588</y>
+       <width>364</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="humanOutPieces">
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="human9">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="human10">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="human11">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="human12">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="human13">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="human14">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="human15">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QPushButton" name="human16">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="human1">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+opacity: 50%;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="human2">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="human3">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="human4">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QPushButton" name="human5">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QPushButton" name="human6">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QPushButton" name="human7">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <widget class="QPushButton" name="human8">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 30px;
+width: 30px;
+icon-size: 30px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="chessIconKing">
+     <property name="geometry">
+      <rect>
+       <x>148</x>
+       <y>292</y>
+       <width>71</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+background: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/kingW.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chessIconQueen">
+     <property name="geometry">
+      <rect>
+       <x>186</x>
+       <y>282</y>
+       <width>71</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+background: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/queenW.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chessIconBishop">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>282</y>
+       <width>71</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+background: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/bishopW.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chessIconRook">
+     <property name="geometry">
+      <rect>
+       <x>72</x>
+       <y>272</y>
+       <width>71</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+background: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/rookW.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chessIconKnight">
+     <property name="geometry">
+      <rect>
+       <x>224</x>
+       <y>272</y>
+       <width>71</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+background: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/knightW.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chessIconPawn">
+     <property name="geometry">
+      <rect>
+       <x>262</x>
+       <y>262</y>
+       <width>71</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+background: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/pawnW.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chessIconPawn2">
+     <property name="geometry">
+      <rect>
+       <x>34</x>
+       <y>262</y>
+       <width>71</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+background: none;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/pawnW.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chessIconText">
+     <property name="geometry">
+      <rect>
+       <x>74</x>
+       <y>344</y>
+       <width>213</width>
+       <height>75</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font-size: 46px;
+background: none;</string>
+     </property>
+     <property name="text">
+      <string>C H E S S</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <zorder>chessIconQueen</zorder>
+    <zorder>layoutWidget</zorder>
+    <zorder>humanIcon</zorder>
+    <zorder>botIcon</zorder>
+    <zorder>botScore</zorder>
+    <zorder>humanScore</zorder>
+    <zorder>humanTimer</zorder>
+    <zorder>botTimer</zorder>
+    <zorder>botLabel</zorder>
+    <zorder>humanLabel</zorder>
+    <zorder>botScoreLabel</zorder>
+    <zorder>humanScoreLabel</zorder>
+    <zorder>botTimerLabel</zorder>
+    <zorder>humanTimerLabel</zorder>
+    <zorder>layoutWidget</zorder>
+    <zorder>chessIconKing</zorder>
+    <zorder>chessIconBishop</zorder>
+    <zorder>chessIconRook</zorder>
+    <zorder>chessIconPawn</zorder>
+    <zorder>chessIconPawn2</zorder>
+    <zorder>chessIconKnight</zorder>
+    <zorder>chessIconText</zorder>
+   </widget>
+   <widget class="QFrame" name="mainFrame">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>6</y>
+      <width>687</width>
+      <height>677</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(70, 70, 70);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>38</x>
+       <y>0</y>
+       <width>644</width>
+       <height>644</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="chessBoard">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="horizontalSpacing">
+       <number>6</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pos8a">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/rookB.png</normaloff>images/rookB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pos8b">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/knightB.png</normaloff>images/knightB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pos8c">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/bishopB.png</normaloff>images/bishopB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pos8d">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/queenB.png</normaloff>images/queenB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="pos8e">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/kingB.png</normaloff>images/kingB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="pos8f">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/bishopB.png</normaloff>images/bishopB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="pos8g">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/knightB.png</normaloff>images/knightB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QPushButton" name="pos8h">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/rookB.png</normaloff>images/rookB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pos7a">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnB.png</normaloff>images/pawnB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pos7b">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnB.png</normaloff>images/pawnB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pos7c">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnB.png</normaloff>images/pawnB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="pos7d">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnB.png</normaloff>images/pawnB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QPushButton" name="pos7e">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnB.png</normaloff>images/pawnB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QPushButton" name="pos7f">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnB.png</normaloff>images/pawnB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QPushButton" name="pos7g">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnB.png</normaloff>images/pawnB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <widget class="QPushButton" name="pos7h">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnB.png</normaloff>images/pawnB.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pos6a">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pos6b">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="pos6c">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="pos6d">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QPushButton" name="pos6e">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QPushButton" name="pos6f">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QPushButton" name="pos6g">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="7">
+       <widget class="QPushButton" name="pos6h">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="pos5a">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="pos5b">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="pos5c">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="pos5d">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QPushButton" name="pos5e">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QPushButton" name="pos5f">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="6">
+       <widget class="QPushButton" name="pos5g">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="7">
+       <widget class="QPushButton" name="pos5h">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="pos4a">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="pos4b">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="pos4c">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="pos4d">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QPushButton" name="pos4e">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QPushButton" name="pos4f">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="6">
+       <widget class="QPushButton" name="pos4g">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="7">
+       <widget class="QPushButton" name="pos4h">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="pos3a">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="pos3b">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="pos3c">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QPushButton" name="pos3d">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="4">
+       <widget class="QPushButton" name="pos3e">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="5">
+       <widget class="QPushButton" name="pos3f">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="6">
+       <widget class="QPushButton" name="pos3g">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="7">
+       <widget class="QPushButton" name="pos3h">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QPushButton" name="pos2a">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnW.png</normaloff>images/pawnW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QPushButton" name="pos2b">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnW.png</normaloff>images/pawnW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QPushButton" name="pos2c">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnW.png</normaloff>images/pawnW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QPushButton" name="pos2d">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnW.png</normaloff>images/pawnW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="4">
+       <widget class="QPushButton" name="pos2e">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnW.png</normaloff>images/pawnW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="5">
+       <widget class="QPushButton" name="pos2f">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnW.png</normaloff>images/pawnW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="6">
+       <widget class="QPushButton" name="pos2g">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnW.png</normaloff>images/pawnW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="7">
+       <widget class="QPushButton" name="pos2h">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/pawnW.png</normaloff>images/pawnW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QPushButton" name="pos1a">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/rookW.png</normaloff>images/rookW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QPushButton" name="pos1b">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/knightW.png</normaloff>images/knightW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QPushButton" name="pos1c">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/bishopW.png</normaloff>images/bishopW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QPushButton" name="pos1d">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/queenW.png</normaloff>images/queenW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="4">
+       <widget class="QPushButton" name="pos1e">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/kingW.png</normaloff>images/kingW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="5">
+       <widget class="QPushButton" name="pos1f">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/bishopW.png</normaloff>images/bishopW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="6">
+       <widget class="QPushButton" name="pos1g">
+        <property name="styleSheet">
+         <string notr="true">background: white;
+color: black;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/knightW.png</normaloff>images/knightW.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="7">
+       <widget class="QPushButton" name="pos1h">
+        <property name="styleSheet">
+         <string notr="true">background: rgb(118, 150, 86);
+color: white;
+height: 65px;
+width: 65px;
+icon-size: 65px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/rookW.png</normaloff>images/rookW.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>6</y>
+       <width>17</width>
+       <height>625</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="labels1to8">
+      <item>
+       <widget class="QLabel" name="label8">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>8</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label7">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>7</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label6">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label5">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label4">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label3">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label2">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label1">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>38</x>
+       <y>634</y>
+       <width>645</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="labelsatoh">
+      <item>
+       <widget class="QLabel" name="labela">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>a</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelb">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>b</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelc">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>c</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labeld">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>d</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labele">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>e</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelf">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>f</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelg">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>g</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelh">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 28px;
+height: 65px;</string>
+        </property>
+        <property name="text">
+         <string>h</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1076</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
