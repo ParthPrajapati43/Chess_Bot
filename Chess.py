@@ -11,6 +11,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from functools import partial
 import chess
+import os
+import sys
 
 
 class Ui_Chess(object):
